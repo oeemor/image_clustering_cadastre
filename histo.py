@@ -18,7 +18,7 @@ for i in range(len(sys.argv)):
         print("Usage: python histo.py --dir <image_folder>")
         sys.exit(1)
     try:
-        if sys.argv[i] == '--nb-clusters':
+        if sys.argv[i] in ['-n', '--nb-clusters']:
             k = int(sys.argv[i + 1])
             
     except IndexError:
